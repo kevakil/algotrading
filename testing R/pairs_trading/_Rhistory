@@ -1,0 +1,217 @@
+import(quantmod)
+?get
+?import
+?require
+require(quantmod)
+?getSymbols
+getSymbols(Symbols = AAPL, src="google")
+getSymbols(Symbols = 'AAPL', src="google")
+dir(AAPLE)
+dir(AAPL)
+View(AAPL)
+AAPL.Open
+detach(AAPL)
+detach(Data)
+View(AAPL)
+View(AAPL)
+detach('AAPL')
+library("data.table", lib.loc="~/R/x86_64-pc-linux-gnu-library/3.2")
+install.packages("TTR")
+library("quantmod", lib.loc="~/R/x86_64-pc-linux-gnu-library/3.2")
+install.packages("quantmod")
+h = 1:100
+h
+h[50]
+AAPL.Open[1]
+AAPL
+detach(AApl)
+detach(AAPL
+)
+dim(h)
+dim(AAPL)
+AAPL.2007-01-08.Open
+dim(AAPL)
+APPL.head
+APPL.head()
+head(AAPL)
+tail(AAPL)
+AAPL[1]
+AAPL[2]
+AAPL[:]
+AAPL[:1]
+AAPL[1,1]
+AAPL[1,3]
+AAPL[1,]
+AAPL[,1]
+AAPL[,1][1]
+plot(AAPL[,4])
+require("TTR")
+EMA(AAPL[,4], 30)
+plot(EMA(AAPL[,4], 30)
+)
+plot(EMA(AAPL[,4], 30))
+AAPL_EMA_30 = EMA(AAPL[,4], 30)
+lines(AAPL_EMA_30)
+lines(AAPL[,4])
+plot(AAPL[,4])
+lines(AAPL_EMA_30)
+plot(AAPL[,4])
+lines(AAPL_EMA_30)
+plot(AAPL_EMA_30)
+lines(AAPL_EMA_30)
+lines(AAPL_EMA_30)
+plot(AAPL[,4])
+head(AAPL_EMA_30)
+lines(AAPL_EMA_30,col="red")
+plot(AAPL[,4])
+lines(AAPL_EMA_30[40:],col = "red")
+?lines
+plot(AAPL[,4])
+plot(!is.na(AAPL_EMA_30))
+plot(AAPL_EMA_30[!is.na(AAPL_EMA_30)])
+plot(AAPL[,4])
+lines(AAPL_EMA_30[!is.na(AAPL_EMA_30)])
+?na
+?na.omit
+na.omit(lines)
+na.omit(AAPL_EMA_30)
+plot(AAPL[,4])
+lines(AAPL_EMA_30)
+head(AAPL_EMA_30)
+?lines
+plot(na.omit(AAPL_EMA_30))
+plot(AAPL[,4])
+AAPL_EMA_30 = EMA(AAPL[,4],30)
+line(na.omit(AAPL_EMA_30))
+lines(na.omit(AAPL_EMA_30))
+head(na.omit(AAPL_EMA_30))
+plot(na.omit(AAPL_EMA_30))
+plot(AAPL_EMA_30)
+plot(na.omit(AAPL_EMA_30))
+plot(AAPL_EMA_30)
+lines(AAPL[,4])
+plot(AAPL[,4])
+AAPL_PRICES = AAPL[,4]
+plot(AAPL_PRICES)
+lines(AAPL_EMA_30)
+plot(AAPL_EMA_30)
+plot(AAPL_PRICES)
+plot(AAPL_EMA_30, col="red")
+plot(AAPL_PRICES)
+head(AAPL)
+AAPL[1]
+AAPL[2]
+AAPL[2].Open
+AAPL[2][1]
+AAPL[2][2]
+AAPL[2]
+AAPL[1]
+AAPL[1]
+AAPL[1,1]
+AAPL[1,0]
+AAPL[1,3]
+AAPL[1,4]
+AAPL[1,0]
+plot(AAPL_EMA_30[AAPL[1,0]>'20015-01-01'])
+plot(AAPL_EMA_30[AAPL[1,0]>'2015-01-01'])
+install.packages("Pairs Trading")
+install.packages("PairsTrading")
+install.packages("PairTrading")
+library(PairTrading)
+install.packages("PairTrading")
+AAPL
+head(AAPL)
+require(quantmod)
+?quantmod
+getSymbols(Symbols = 'AAPL')
+EMA_30_AAPL
+AAPL_CLOSE = AAPL[,4]
+EMA_30_APPL = EMA(AAPL_CLOSE, n = 30)
+plot(APPL_CLOSE)
+plot(EMA_30_APPL)
+plot(APPL_CLOSE)
+plot(AAPL_CLOSE)
+lines(EMA_30_APPL, col="red")
+plot(AAPL_CLOSE)
+plot(AAPL_CLOSE, col = "blue")
+lines(AAPL_CLOSE, col = "blue")
+clear()
+plot(AAPL_CLOSE, col = "blue")
+par(new = TRUE)
+plot(EMA_30_APPL, col="red")
+EMA_10_AAPL = EMA(APPL_CLOSE, n=10)
+EMA_10_AAPL = EMA(AAPL_CLOSE, n=10)
+plot(EMA_10_AAPL, col="green")
+par(new=T)
+plot(AAPL_CLOSE)
+?rbitcoin
+??bitcoin
+??bitcoin?rbitcoin
+?Rbitcoin
+?RBitcoin
+Rbitcoin
+require(RBitcoin)
+?rBitcoin
+install.packages("Rbitcoin", repos=c("https://jangorecki.gitlab.io/Rbitcoin","https://cran.rstudio.com"))
+deatch(Data)
+?rm
+rm(ls())
+rm(ls(Data))
+ls
+ls(AAPL)
+rm()
+rm(AAPL)
+ls()
+rm(ls())
+rm(c(ls())
+)
+rm(c(ls()))
+ls()
+rm(ls())
+ls(rm())
+ls()
+list = ls()
+list
+rm(list)
+rm(ls())
+rm(AAPL_CLOSE)
+rm(EMA_10_AAPL)
+rm(EMA_30_APPL)
+?btc
+library(Rbitcoin)
+?btc
+fromBTC
+ls(fromBTC)
+?fromBTC
+fromBTC(1)
+fromBTC(1)
+toBTC(634)
+?market.api.query
+?market
+?market.api.query
+?Rbitcoin.query.dict
+?Rbitcoin.plot
+market.api.process(action=c("trades","order_book"))
+market.api.query(market = 'bitstamp',
+url = 'https://www.bitstamp.net/api/ticker/')
+bitstamp = market.api.query(market = 'bitstamp',
+url = 'https://www.bitstamp.net/api/ticker/')
+head(bitstamp)
+?blockchain.api.process
+?rbtc.plot
+?btc
+install.packages("devtools")
+install.packages("data.table") # 1.9.5+
+install.packages("shiny")
+install.packages("data.table")
+install.packages("data.table")
+install.packages("data.table")
+install.packages("data.table")
+install.packages("data.table")
+install.packages("data.table")
+install.packages("data.table")
+install.packages("data.table")
+shiny::runGitHub("jangorecki/shinyBTC")
+install.packages(rmarkdown)
+install.packages("rmarkdown")
+shiny::runGitHub("jangorecki/shinyBTC")

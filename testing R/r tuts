@@ -1,0 +1,183 @@
+R
+ls() shows all values
+rm(value) removes a value
+exp(number) returns antilog
+***c(values) - concacatinate command (creates vector)
+seq - for vector sequences
+rep - for vector repetitions
+
+can use simple operands on all elements using scalar quantities or using another vector of the same size
+
+1-indexed
+x[-1] - get all elements except first element
+**x[x<6] - get all elements less than 6
+**matrix(vector, nrow, byrow=TRUE(rowwise?))
+
+mat[c(1,3), 2] get elements from row 1 or 3 and column 2
+	mat[1:3, 2]
+mat[2,] get all elements in row 2
+
+help() command
+read.csv command
+read.delim for tabs
+**read.table has sep field that can read data of a differently delimited type of file
+	file
+	sep
+	header
+file.choose to choose file manually or you can type manually to find data using file = "PATH/TO/FILE"
+*T = TRUE
+
+***Import Dataset button in top right workspace tab
+
+dim() number of rows and columns
+length() length of vector
+head() first 6 rows
+tail() first 6 rows
+
+*names(Data) find names of data
+
+**Accessing variables in a dataset
+	# extracting data, harder to do, but is "good practice" if R was another language
+		mean(Dataset$Variable)
+	# attaching data, call a variable by its name, but can be overwritten eaier and take up R's memory
+		***attach(Data)
+		mean(Age) now works since Age is considered a variable
+		detach(Data)
+
+class(Variable) find type of variable
+*levels(Variable) find possible options for each variable
+***summary(Data) gives generic summary of data
+
+**factor class-> a categorical variable
+
+***categorical variables may be stored as 0-1 variables in datasets, (check with class function). convert using as.factor command
+	x = as.factor(x)
+***can subset information based on variables
+	mean(Age[Gender=="female"])
+
+can use logical operators on vectors
+*as.class(stuff) convert stuff to class
+
+**to append a column use cbind(Data, column to append)
+
+rm(list=ls()) to clear workspace (or use session on top bar)
+
+use different working directory per project
+getwd() to get working directory
+setwd('PATH/TO/DIRECTORY') to set working directory (or using session on the top bar)
+
+workspace image file save in current directory (or use session on top bar)
+save.image("ProjectName.Rdata")
+save.image()
+q() to quit
+
+load("ProjectName.Rdata") if you are in the current directory or load(file.chose()) to get previous workspace (or session button)
+
+run or Ctrl+Enter run the current lines
+install.packages() to install package
+library(packageName) to use package
+
+play around with preferences
+
+
+*** BAR AND PIE CHARTS
+table(Variable) (can use mathematical and logical operations)
+
+barplot(table) ***look at arguements help(barplot)
+	rotate y-axis using las=1
+	main='title'
+	names.arg to rename
+	horiz = T
+
+pie(table)
+
+box() makes a box around data
+
+numeric variable -> boxplot
+
+boxplot |--[][  ]---|
+	probs=c(0,.25,.5,.75,1) to print quantile values
+
+	***boxplot(Variable1 ~ Variable2) provides boxplot of Variable1 for each category in Variable2
+		or boxplot(Variable[Gender=="female"], Variable[Gender=="male"])
+
+	**stratified boxplots - categorical and numerical variable within strata or groups defined by a third categorical variable
+	***boxplot(Var1~Var2*Var3) create boxplot of Var2 and Var3 combinations
+		Var1 vs Var2 by Var3
+**las arguement changes rotation of text on axis
+**col arguement cyles through colors by default
+	axis and legend functions to make plot easier to read
+
+**histogram for numeric variables
+	hist(Data)
+		freq arguement is frequency vs probaility
+		prob arguement is probability vs frequency
+		xlim or ylim are range of values
+		breaks breakpoints (breaks+1 bins) (could use sequence here)
+	lines(density(Data))
+		col color
+		lwd is thickness
+
+*stem and leaf plots
+	stem(Variable)
+		scale is number of stems to split each stem into
+
+***2 categorical variables
+	produce contingency table
+	table(Var1, Var2)
+	barplot(table)
+		beside unstacked vs stacked
+		legend.text use default labels or make your own with c("axis names")
+		col to affect colors
+
+	mosaicplot(table)
+
+****scatterplots
+	plot()
+	cor(Var1, Va2)
+	cex change of plotting character
+	pch change shape
+	abline(lm(Var1, Var2))
+	lines(smooth.spline(Var1, Var2))
+		lty/lwd
+****numerical summaries
+	categorical variables represented with frequency/proportion
+	mean(Variable)
+		trim takes out the top and bottom percent (.1 = 10%)
+	median(Variable)
+	var(Variable) variance (standarddev squared)
+	sd(Variable) standard dev
+	sum, min, max, range, quantile(Variable, prob)
+		probs which percentiles do you want
+	***cor() Pearson correlation by default
+		change with method arguement
+	cov() covariance
+
+cex.arguement changes text size of arguement
+font.arguement changes font of argeument
+pch changes plotting character
+
+points method adds to current plot instead of overwriting plots
+
+***to add plots to screen,
+	par command with mfrow parameter (take a vector as input of how large the matrix of plots should be)
+	then use plot command again
+use axis command to use customized axis
+
+*adding text to plots
+	text command
+		x, y, label, adj (at beginning or end of that part), cex, col, font)
+
+	abline
+		h make a horizontal line
+		lwd for thickeness
+	mtext command for text on margins of plots
+		text
+		side (which side to place text)
+		adj
+
+**legend command to add legend to plot
+	x, y, legend=c("names"), fill(color), col(color), pch(shape), bty (boxtype), lty(line type)
+	pch = 16
+
+lines(smoot.spline)

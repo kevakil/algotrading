@@ -1,0 +1,18 @@
+Machine learning isn't really too difficult if you break it down into steps
+"Buzzword"
+Machine learning is mainly supervised (guiding the machine how to approach the task)
+Unsupervised machine learning is what people think machine learning is
+Machine classification is a better term (automated classification)
+A form of supervised ml is called ml, but all ml is classfied
+(ie unsupervised clustering-throw data at machine and look for groups/classfications)
+supervised - guide the machine, label the data, we know the answers, show it
+unsupervised - dont guide the machine, let it go on its own
+human classfication is one of our preferences, but from a scientific standpoint, not everything is so binary
+machines are better at looking at gradients/probabilities (better for science)
+dont make your own supervised ml, its already done very well
+most time with ml is spent getting data, organizing data, and structuring data for algorithm (at least normalization)
+(ie derive values from fundamental data)
+machine learning cannot be applied to everything (only unsupervised learning can do that)
+	very difficult
+fear ml? nah we gucci
+
